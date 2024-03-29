@@ -1,0 +1,92 @@
+.hidden {
+  display: none;
+}
+body {
+  background-image: url(../images/Background.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: #d4b9b9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header > h1 {
+  background-image: url(../images/Header.jpg);
+  text-align: center;
+  padding: 50px;
+}
+
+/*applies to all sctions*/
+section {
+  width: 300px;
+  border: 4px solid #fff;
+  border-radius: 8px;
+  margin: 10px 12px;
+}
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ span.check::after {
+  content: "\2713";
+  width: 25px;
+  height: 25px;
+}
+.check-all {
+  display: inline-block;
+  cursor: pointer;
+}
+
+section > h2 {
+  color: #7d4600;
+  padding: 4px 8px;
+}
+
+section:first-of-type {
+  border: 4px solid #ee8434;
+}
+
+#afternoon {
+  border: 4px solid #ffef9f;
+}
+
+#afternoon {
+  color: black;
+}
+
+#night {
+  border: 4px solid #73ab84;
+}
+
+#night h2 {
+  color: #7d4600;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 6px 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.morning li:nth-child(odd) {
+  background-color: #f78154;
+}
+
+.afternoon li:nth-child(odd) {
+  background-color: #f2c14e;
+}
+
+.night li:nth-child(odd) {
+  background-color: #5fad56;
+}
